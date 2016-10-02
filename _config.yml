@@ -2,15 +2,21 @@
 title: Beautifurl
 email: info@beautifurl.co
 url: https://beautifurl.co
-description: "BEAUTIFURL - make your URLs beautiful when they unfurl or embed in Slack, Medium, and more."
-skills: ""
-meta_author: Mann Boris
+
+# Meta
+meta_author: Boris Mann
+description: "BEAUTIFURL - make your URLs beautiful when they unfurl or embed in Slack, Medium, Facebook, Twitter, and more."
+meta_twitter: beautifurl
+meta_facebook: beautifurl
+meta_image: "/img/curly256.png"
 
 # Google webmaster tools
 google_verify:
 
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
+
+skills: ""
 
 # Contact form:
 # - static : pass through formspree.io to validate email sending
@@ -24,17 +30,17 @@ disqus_shortname:
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+  primary: "64BE07"
+  primary-rgb: "100,190,7"
+  secondary: "3A2306"
+  secondary-dark: "2C1806"
 
 # Footer settings
 footer:
   copyright: BEAUTIFURL
   location: Location
   social: Around the Web
-  credits: Credits
+  credits: About
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -49,7 +55,7 @@ address:
   - line: Vancouver, BC, Canada
 
 # Credits content
-credits: ''
+credits: 'Beautifurl is a hosted service to help you customize the images and information that displays when other services embed your links.'
 
 # Build settings
 markdown: kramdown

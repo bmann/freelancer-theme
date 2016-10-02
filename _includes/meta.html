@@ -1,0 +1,32 @@
+
+    <title>{% if page.pagetitle %}{{ page.pagetitle }}{% else %}{{ page.title}} - {{ site.title }}{% endif %}</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    {% if site.meta_author %}<meta name="author" content="{{ site.meta_author }}" />{% endif %}
+    <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.url }}{% else %}{{ site.meta_image | prepend: site.url }}{% endif %}" />
+    <meta property="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.url }}{% else %}{{ site.meta_image | prepend: site.url }}{% endif %}" />
+    <meta name="twitter:title" content="{% if page.pagetitle %}{{ page.pagetitle }}{% else %}{{ page.title}} - {{ site.title }}{% endif %}" />
+    <meta name="twitter:card" content="summary" />
+    {% if site.meta_twitter %}<meta name="twitter:site" content="{{ site.meta_twitter }}" />{% endif %}
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    {% if layout == "post" %}<meta property="og:type" content="article" />{% else %}<meta property="og:type" content="website" />{% endif %}
+
+    <link rel="alternate" type="application/json+oembed"
+  href="http://oembed.beautifurl.co/services/oembed?url={{ page.url | prepend: site.url | uri_escape }}&format=json"
+  title="Beautifurl oEmbed Profile" />
+
+
+    <!-- Google verification -->
+    {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
+
+    <!-- Bing Verification -->
+    {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+
+

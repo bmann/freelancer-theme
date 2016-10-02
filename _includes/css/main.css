@@ -3,6 +3,11 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+h7 {
+    color: #3A2306; /* secondary */
+    color: #2C1806; /* secondary dark */
+    color: #64BE07; /* primary RGB "100,190,7" */
+}
 
 body {
     overflow-x: hidden;

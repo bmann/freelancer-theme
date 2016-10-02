@@ -16,7 +16,7 @@
     {% if layout == "post" %}<meta property="og:type" content="article" />{% else %}<meta property="og:type" content="website" />{% endif %}
 
     <link rel="alternate" type="application/json+oembed"
-  href="http://oembed.beautifurl.co/services/oembed?url={{ page.url | prepend: site.url | uri_escape }}&format=json"
+  href="http://oembed.beautifurl.co/services/oembed?url={{ page.url | prepend: site.url | cgi_escape }}&format=json"
   title="Beautifurl oEmbed Profile" />
 
 
